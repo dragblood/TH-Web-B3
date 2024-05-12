@@ -1,0 +1,210 @@
+body {
+  background: black;
+  color: white;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 3px;
+}
+main {
+  margin-top: 1em;
+}
+
+.navbar {
+  margin: 0em 3em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+}
+
+.userform {
+  margin: 5% 0;
+}
+
+button {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 1px;
+  font-size: 17px;
+  height: 2.5em;
+  border: 3px solid;
+  border-radius: 10px;
+  text-transform: uppercase;
+  background-color: black;
+  color: #2db5e1;
+  border-color: #2db5e1;
+}
+button:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#home,
+#logout {
+  width: 6.5em;
+}
+
+.submit {
+  margin-top: 3%;
+  margin-bottom: 5%;
+  background-color: #2db5e1;
+  color: white;
+  border-color: #2db5e1;
+  font-size: 16px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #2db5e1;
+  font-size: 15px;
+}
+a:hover {
+  text-decoration: none;
+  color: #2db5e1;
+}
+
+.inputfield {
+  min-width: 100%;
+  max-width: 100%;
+  margin: 3% 0;
+  padding: 1em;
+  border: 2px solid #2db5e1;
+  background-color: black;
+  color: #51d0fa;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.passList {
+  list-style: square inside;
+  padding: 0;
+}
+
+.info {
+  font-weight: bold;
+}
+
+.containerForm,
+.containerAchievement {
+  background-color: #7d9ba53d;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 2% 3%;
+}
+
+.containerAchievement {
+  display: flex;
+  align-items: center;
+}
+
+.achievImage {
+  margin: 5% 0;
+  border-radius: 50%;
+  width: 7em;
+  height: 7em;
+  opacity: 0.2;
+}
+
+.trans {
+  opacity: 1;
+}
+
+.rowAchievement {
+  width: 100%;
+  margin: 0;
+  text-align: center;
+}
+
+.achievementCol {
+  text-align: center;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+span {
+  color: #51d0fa;
+  padding-left: 5px;
+  display: none;
+}
+
+#footer {
+  width: 100%;
+  height: 70px;
+}
+
+.portrait {
+  border-radius: 50%;
+  max-width: 50%;
+}
+
+/*achievement*/
+.achievement_popup {
+  position: fixed;
+  bottom: 0;
+  right: 10px;
+  animation: popup 8s;
+  background-color: #1e2527;
+  border-radius: 5px 5px 0 0;
+  border-top: 1px solid#51d0fa;
+  border-right: 1px solid#51d0fa;
+  border-left: 1px solid#51d0fa;
+  width: 0;
+  text-align: center;
+  opacity: 0;
+}
+
+.ach_Img {
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+  margin-top: 10%;
+}
+
+.ach_p {
+  margin-top: 5%;
+}
+
+@keyframes popup {
+  0% {
+    opacity: 1;
+    width: 10em;
+  }
+  99% {
+    opacity: 0;
+    width: 10em;
+  }
+  100% {
+    width: 0;
+  }
+}
+/*achievement*/
+ /* Small devices (landscape phones, 576px and up) */
+ @media (min-width: 576px) { 
+  .hide2 {
+    display: none;
+  }
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .userform {
+    margin: 1% 0;
+  }
+
+  .achievementRow {
+    text-align: left;
+  }
+
+  span {
+    display: inline;
+  }
+}

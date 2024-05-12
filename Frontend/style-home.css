@@ -1,0 +1,295 @@
+ body {
+    background: black;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 3px;
+} 
+.black-font {
+  color: black;
+}
+.navbar-bg {
+  background-color: black;
+}
+.white-font {
+  color: white;
+}
+
+.navig-link:hover {
+    color:lightskyblue;
+}
+.navig-link:active {
+  color: lightseagreen;
+}
+.font-align {
+  color: white;
+}
+#searchbar {
+  border-radius: 1rem;
+}
+a {
+  text-decoration: none;
+  color: #2db5e1;
+  font-size: 15px;
+}
+.navig-link2:hover {
+  color: lightskyblue;
+  text-decoration: underline;
+}
+#footer {
+    bottom: 0;
+    width: 100%;
+    margin-top: 30px;
+}
+.portrait {
+  border-radius: 50%;
+  max-width: 50%;
+}
+
+/*achievement*/
+.achievement_popup {
+  position: fixed;
+  bottom: 0;
+  right: 10px;
+  animation: popup 8s;
+  background-color: #1e2527;
+  border-radius: 5px 5px 0 0;
+  border-top: 1px solid#51d0fa;
+  border-right: 1px solid#51d0fa;
+  border-left: 1px solid#51d0fa;
+  width: 0;
+  text-align: center;
+  opacity: 0;
+  z-index: 9;
+}
+
+.ach_Img {
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+  margin-top: 10%;
+}
+
+.ach_p {
+  margin-top: 5%;
+}
+
+@keyframes popup {
+  0% {
+    opacity: 1;
+    width: 10em;
+  }
+  99% {
+    opacity: 0;
+    width: 10em;
+  }
+  100% {
+    width: 0;
+  }
+}
+/*achievement*/
+
+  .submit {
+    background-color: #2db5e1;
+    color: white;
+    border-color: #2db5e1;
+    font-size: 16px;
+    border-radius: 0.5rem;
+  }
+  .submit:hover{
+    font-weight: bold;
+  }
+  .font-navbar {
+    font-size: 12px;
+  }
+  .font-notifications {
+    font-size: 10px;
+  }
+  .search-font {
+    width: 150px;
+    height: 20px;
+  }
+  .notify {
+    margin-left: -2rem;
+  }
+  .userinfo {
+    margin-left: -2rem;
+  }
+.font-titles {
+  font-size: 10px;
+}
+  /* card pop-up */
+  .hide {
+      display: none;
+  }
+  .card {
+    position: fixed;
+    top: 14%;
+     right: 10%;
+     width: 80%;
+    bottom:12%; 
+    z-index:1;
+    overflow: auto; 
+     /* overflow: auto; 
+    width:900px;
+     height:500px; */
+  }
+
+  .trailer-area {
+    width: 92%;
+    height: 150px;
+    min-width: 90%;
+    min-height: 100%;
+  }
+  .xclose {
+    font-size: 12px;
+  }
+/* carousel */
+/* The box-sizing property allows us to include the padding and border in an element's total width and height. */
+* {box-sizing: border-box;}
+.carousel-cell {
+    width: 80px;
+    height: 120px;
+    margin-right: 10px;
+    background: #8C8;
+    border-radius: 5px;
+}
+
+.carousel-cell img {
+  width: 80px;
+  height: 120px;
+}
+/*  */
+  .content, .success {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      margin: 2em 0em;
+  }
+
+
+
+  /* Small devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) { 
+    .hide2 {
+      display: none;
+    }
+    .font-notifications {
+      font-size: 12px;
+    }
+    .font-titles {
+      font-size: 12px;
+    }
+    .search-font {
+      width: 200px;
+      height: 30px;
+    }
+    .carousel-cell {
+        width: 100px;
+        height: 150px;
+        margin-right: 10px;
+        background: #8C8;
+        border-radius: 5px;
+    }
+    
+    .carousel-cell img {
+      width: 100px;
+      height: 150px;
+    }
+    .trailer-area {
+      height: 200px;
+    }
+    .xclose {
+      font-size: 14px;
+    }
+  }
+
+  /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  
+  .font-navbar {
+    font-size: 18px;
+  }
+  .font-notifications {
+    font-size: 15px;
+  }
+  .font-titles {
+    font-size: 16px;
+  }
+  .xclose {
+    font-size: 18px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  
+  .carousel-cell {
+    width: 200px;
+    height: 300px;
+    margin-right: 10px;
+    background: #8C8;
+    border-radius: 5px;
+}
+
+.carousel-cell img {
+    width: 200px;
+    height: 300px;
+}
+
+.trailer-area {
+  height: 350px;
+}
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  
+  .notify {
+    margin-left: -12rem;
+  }
+  .userinfo {
+    margin-left: -6rem;
+  }
+  .trailer-area {
+    height: 400px;
+  }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+  .font-navbar {
+    font-size: 25px;
+  }
+  .font-titles {
+    font-size: 24px;
+  }
+  .carousel-cell {
+    width: 250px;
+    height: 350px;
+    margin-right: 10px;
+    background: #8C8;
+    border-radius: 5px;
+}
+
+.carousel-cell img {
+    width: 250px;
+    height: 350px;
+}
+
+.card {
+   right: 25%;
+   width: 50%;
+ }
+ .trailer-area {
+  width: 92%;
+  height:550px;
+  min-width: 90%;
+  min-height: 100%;
+}
+.xclose {
+  font-size: 22px;
+}
+}
+
+
+

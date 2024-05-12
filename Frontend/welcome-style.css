@@ -1,0 +1,36 @@
+body {
+  background-image: url("../assets/Screenshot_movies_copy2.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.welcomeBox {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;*/
+  margin: 3em auto;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  width: 60%;
+}
+@media screen and (min-width: 460px) and (max-width: 780px){
+  .welcomeBox{
+    width: 80%;
+  }
+}
+@media screen and (max-width: 460px){
+  .welcomeBox{
+    width: 90%;
+  }
+  h1{
+    font-size: 20px;
+  }
+  h3{
+    font-size: 15px;
+  }
+}
+#CTA {
+  font-size: 30px;
+  text-align: center;
+  margin: 1em;
+}

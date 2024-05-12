@@ -1,0 +1,86 @@
+body {
+  background: black;
+  color: white;
+  /* margin: 0; */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 3px;
+}
+.navbar-bg {
+  background-color: black;
+}
+.white-font {
+  color: white;
+}
+.navig-link:hover {
+  color: lightskyblue;
+  font-size: 1.2rem;
+}
+.navig-link:active {
+  color: lightseagreen;
+}
+.font-size {
+  font-size: 120%;
+}
+.font-align {
+  color: white;
+}
+#searchbar {
+  border-radius: 1rem;
+}
+a {
+  text-decoration: none;
+  color: #2db5e1;
+  font-size: 15px;
+}
+.font-navbar {
+  font-size: 12px;
+}
+.notify {
+  margin-left: -2rem;
+}
+.userinfo {
+  margin-left: -2rem;
+}
+.font-notifications {
+  font-size: 10px;
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+  .font-notifications {
+    font-size: 12px;
+  }
+  .search-font {
+    width: 200px;
+    height: 30px;
+  }
+  
+}
+ /* Medium devices (tablets, 768px and up) */
+ @media (min-width: 768px) {
+  .font-navbar {
+    font-size: 18px;
+  }
+  .font-notifications {
+    font-size: 15px;
+  }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+  .font-navbar {
+    font-size: 25px;
+  }
+  .notify {
+    margin-left: -12rem;
+  }
+  .userinfo {
+    margin-left: -6rem;
+  }
+}
+.content,
+.success {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
